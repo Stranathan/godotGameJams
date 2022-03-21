@@ -1,0 +1,6 @@
+// Day 1:
+
+clicky guys that have a preferred location on a circle 
+(they seek and avoid themselves)
+
+make a meta clicky

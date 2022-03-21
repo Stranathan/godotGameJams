@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://nodes/aClicky.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/clickAndDrag.gd" type="Script" id=2]
+
+[node name="TheWorld" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="aClicky" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456, 117 )
+
+[node name="aClicky2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 292, 335 )
+
+[node name="aClicky3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 808, 402 )

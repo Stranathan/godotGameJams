@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://nodes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://nodes/levels/CameraTestLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://nodes/backgroundThingy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://nodes/levels/verticalAlternatingTest.tscn" type="PackedScene" id=4]
+
+[node name="WorldForNow" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 675, 418 )
+scale = Vector2( 1, 1 )
+
+[node name="Camera2D" parent="player" index="2"]
+current = true
+zoom = Vector2( 2, 2 )
+
+[node name="CameraTestLevel" parent="." instance=ExtResource( 2 )]
+
+[node name="aPlatformLayer" parent="CameraTestLevel" instance=ExtResource( 4 )]
+position = Vector2( 1635, -2731 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 3 )]
+
+[editable path="player"]

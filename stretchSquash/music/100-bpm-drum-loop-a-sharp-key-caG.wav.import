@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/100-bpm-drum-loop-a-sharp-key-caG.wav-65d50dcee044b80c8ff7ccbf817e2adf.sample"
+
+[deps]
+
+source_file="res://music/100-bpm-drum-loop-a-sharp-key-caG.wav"
+dest_files=[ "res://.import/100-bpm-drum-loop-a-sharp-key-caG.wav-65d50dcee044b80c8ff7ccbf817e2adf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

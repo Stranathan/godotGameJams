@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/funkish.wav-680c2ee29600222fea9fe88b910de35b.sample"
+
+[deps]
+
+source_file="res://music/funkish.wav"
+dest_files=[ "res://.import/funkish.wav-680c2ee29600222fea9fe88b910de35b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/afrodoodle.wav-49b9f4e93c83cdf411c3f7c9e3a5e5ee.sample"
+
+[deps]
+
+source_file="res://music/afrodoodle.wav"
+dest_files=[ "res://.import/afrodoodle.wav-49b9f4e93c83cdf411c3f7c9e3a5e5ee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

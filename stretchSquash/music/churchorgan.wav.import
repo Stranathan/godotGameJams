@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/churchorgan.wav-f0c6aaea9af15ce5d5f53e9cf35cfc18.sample"
+
+[deps]
+
+source_file="res://music/churchorgan.wav"
+dest_files=[ "res://.import/churchorgan.wav-f0c6aaea9af15ce5d5f53e9cf35cfc18.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
