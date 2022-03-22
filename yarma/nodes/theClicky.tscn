@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://shaders/theClicky.shader" type="Shader" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://nodes/aClicky.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/theClicky.gd" type="Script" id=4]
+[ext_resource path="res://scripts/aClickyOnTheClicky.gd" type="Script" id=5]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/c1 = null
+shader_param/c2 = null
+shader_param/c3 = null
+shader_param/scale = null
+
+[node name="theClicky" type="Node2D"]
+position = Vector2( 512, 300 )
+scale = Vector2( 16, 9.3 )
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 1 )
+texture = ExtResource( 2 )
+
+[node name="aClicky" parent="." instance=ExtResource( 3 )]
+position = Vector2( -8.0625, -1.61288 )
+scale = Vector2( 0.0438141, 0.0902668 )
+script = ExtResource( 5 )
+
+[node name="aClicky2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -10.5, -9.03227 )
+scale = Vector2( 0.044, 0.09 )
+script = ExtResource( 5 )
+
+[node name="aClicky3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -14.3125, -2.25806 )
+scale = Vector2( 0.044, 0.09 )
+script = ExtResource( 5 )

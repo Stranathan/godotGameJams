@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="yarma"
-run/main_scene="res://nodes/TheWorld.tscn"
+run/main_scene="res://nodes/test1.tscn"
 config/icon="res://icon.png"
 
 [physics]

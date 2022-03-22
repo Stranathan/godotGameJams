@@ -37,12 +37,14 @@ func _unhandled_input(event):
 		update() # update() --> _draw()
 	
 	if event is InputEventMouseButton and event.button_index == BUTTON_RIGHT:
-		if selectedClickies.size() != 0:
-			for clicky in selectedClickies:
-				clicky.collider.target = event.position
-				clicky.collider.selected = false
-			selectedClickies = []
-			
+		if event.is_pressed():
+			print(event.position)
+			if selectedClickies.size() != 0:
+				for clicky in selectedClickies:
+					clicky.collider.target = event.position
+					clicky.collider.selected = false
+				selectedClickies = []
+
 func _physics_process(delta):
 	spaceState = get_world_2d().direct_space_state
 

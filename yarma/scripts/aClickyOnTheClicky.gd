@@ -6,7 +6,7 @@ onready var maxVerticalSpeed = 500
 
 #----------------------------------------------
 onready var selected: bool = false
-onready var target: Vector2 = position
+onready var target: Vector2 = global_position
 onready var vel: Vector2 = Vector2.ZERO
 onready var accl: Vector2 = Vector2.ZERO
 onready var speed: float = 300
@@ -22,7 +22,7 @@ func _process(delta):
 		$Sprite.get_material().set_shader_param("hlSwitch", 0.0)
 
 func _physics_process(delta):
-	if position.distance_to(target) > arriveDistThreshold:
+	if global_position.distance_to(target) > arriveDistThreshold:
 		seek()
 		print(target)
 	else:
@@ -31,15 +31,15 @@ func _physics_process(delta):
 	eulerUpdate()
 	
 func seek():
-	var desired = (target - position)
+	var desired = (target - global_position)
 	desired = desired.normalized() * speed
 	var steering = desired - vel
 	addForce(steering)
 	
 func arrive():
-	var t = position.distance_to(target) / arriveDistThreshold # t ∈ [0, 1]
+	var t = global_position.distance_to(target) / arriveDistThreshold # t ∈ [0, 1]
 	var s = t * speed
-	var desired = (target - position)
+	var desired = (target - global_position)
 	desired = desired.normalized() * s
 	var steering = desired - vel
 	addForce(steering)
